@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:theme="@style/Theme.MaterialComponents.Light">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_userPic"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="0.7"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Amritesh Kumar Sinha"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_character"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <View
+                android:id="@+id/view"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="4dp"
+                android:background="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textSize="14sp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

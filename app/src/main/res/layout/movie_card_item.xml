@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardview_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:theme="@style/Theme.MaterialComponents.Light">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_movieposter"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_weight="0.6"
+                android:adjustViewBounds="true"
+                android:fitsSystemWindows="true"
+                android:scaleType="fitXY" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_movieTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tom an Jery"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_avgVote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text="Avg Vote : 8.6"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text="Language : en"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_releaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text="Release Date : 2021-03-03"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

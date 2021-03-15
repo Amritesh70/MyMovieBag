@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:theme="@style/Theme.MaterialComponents.Light">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_movieposter"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="fitXY" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_movieTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tom an Jery"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/purple_500"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_releaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="14sp"
+                    android:text="Release Date : 2021-03-03"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

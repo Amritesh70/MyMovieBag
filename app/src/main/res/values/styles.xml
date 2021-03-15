@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+    <style name="FilterDialog" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@color/purple_500</item>
+        <item name="colorAccent">@color/purple_500</item>
+    </style>
+
+</resources>
